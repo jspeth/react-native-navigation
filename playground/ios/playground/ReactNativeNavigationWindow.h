@@ -7,5 +7,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ReactNativeNavigationWindow : UIWindow
+
 + (instancetype)shared;
+
+- (void)presentAnimated:(BOOL)animated;
+- (void)dismissAnimated:(BOOL)animated;
+
 @end
