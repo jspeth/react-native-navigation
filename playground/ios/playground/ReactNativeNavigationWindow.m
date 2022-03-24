@@ -7,7 +7,7 @@
 #import "ReactNativeNavigationWindow.h"
 
 @interface ReactNativeNavigationWindow ()
-@property (nonatomic, weak) UIWindow *lastWindow;
+@property (nonatomic, strong) UIWindow *lastWindow;
 @end
 
 @implementation ReactNativeNavigationWindow
