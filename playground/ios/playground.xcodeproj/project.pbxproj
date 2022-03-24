@@ -10,6 +10,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4AB1738927EBB9DC00B94349 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1738827EBB9DC00B94349 /* MyRootViewController.m */; };
+		4AB1738D27EBE57800B94349 /* ReactNativeNavigationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1738C27EBE57800B94349 /* ReactNativeNavigationWindow.m */; };
+		4AB1739027EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB1738F27EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.m */; };
 		5006E16627974DEA00D106A6 /* RNNModalHostViewManagerHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006E16527974DEA00D106A6 /* RNNModalHostViewManagerHandlerTest.m */; };
 		5007B4312472CA390002AA4E /* RNNNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007B4302472CA390002AA4E /* RNNNativeViewController.m */; };
 		5007B4342472CBD40002AA4E /* RNNCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007B4322472CBD30002AA4E /* RNNCustomViewController.m */; };
@@ -116,6 +119,12 @@
 		18EFC85255DC04E4B557855F /* libPods-NavigationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NavigationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BE713009EFB937EA4BF877 /* libPods-playground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-playground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4259AF43A23D928FE78B4A3A /* Pods-NavigationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTests.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTests/Pods-NavigationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AB1738727EBB9DC00B94349 /* MyRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRootViewController.h; sourceTree = "<group>"; };
+		4AB1738827EBB9DC00B94349 /* MyRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRootViewController.m; sourceTree = "<group>"; };
+		4AB1738B27EBE57800B94349 /* ReactNativeNavigationWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeNavigationWindow.h; sourceTree = "<group>"; };
+		4AB1738C27EBE57800B94349 /* ReactNativeNavigationWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeNavigationWindow.m; sourceTree = "<group>"; };
+		4AB1738E27EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeNavigation+BootstrapWindow.h"; sourceTree = "<group>"; };
+		4AB1738F27EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ReactNativeNavigation+BootstrapWindow.m"; sourceTree = "<group>"; };
 		4AE37ACF6BFBAB211EE8E7E9 /* Pods-NavigationIOS12Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationIOS12Tests.release.xcconfig"; path = "Target Support Files/Pods-NavigationIOS12Tests/Pods-NavigationIOS12Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4C14E49C47AA48BEDE90A218 /* Pods-SnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTests.debug.xcconfig"; path = "Target Support Files/Pods-SnapshotTests/Pods-SnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5006E16527974DEA00D106A6 /* RNNModalHostViewManagerHandlerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNNModalHostViewManagerHandlerTest.m; sourceTree = "<group>"; };
@@ -250,6 +259,12 @@
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				4AB1738727EBB9DC00B94349 /* MyRootViewController.h */,
+				4AB1738827EBB9DC00B94349 /* MyRootViewController.m */,
+				4AB1738E27EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.h */,
+				4AB1738F27EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.m */,
+				4AB1738B27EBE57800B94349 /* ReactNativeNavigationWindow.h */,
+				4AB1738C27EBE57800B94349 /* ReactNativeNavigationWindow.m */,
 				5007B42F2472CA390002AA4E /* RNNNativeViewController.h */,
 				5007B4302472CA390002AA4E /* RNNNativeViewController.m */,
 				5007B4332472CBD40002AA4E /* RNNCustomViewController.h */,
@@ -361,7 +376,7 @@
 			indentWidth = 4;
 			sourceTree = "<group>";
 			tabWidth = 4;
-			usesTabs = 1;
+			usesTabs = 0;
 		};
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
@@ -812,8 +827,11 @@
 			files = (
 				5007B4312472CA390002AA4E /* RNNNativeViewController.m in Sources */,
 				5078DF39242BE8AA007B0B4F /* TestingAppDelegate.m in Sources */,
+				4AB1738927EBB9DC00B94349 /* MyRootViewController.m in Sources */,
+				4AB1739027EBEB5D00B94349 /* ReactNativeNavigation+BootstrapWindow.m in Sources */,
 				5007B4342472CBD40002AA4E /* RNNCustomViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4AB1738D27EBE57800B94349 /* ReactNativeNavigationWindow.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

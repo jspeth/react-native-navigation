@@ -6,6 +6,10 @@
 #import "RNNCustomViewController.h"
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
 
+#import "MyRootViewController.h"
+#import "ReactNativeNavigation+BootstrapWindow.h"
+#import "ReactNativeNavigationWindow.h"
+
 @interface AppDelegate () <RCTBridgeDelegate>
 @end
 
@@ -20,10 +24,11 @@
     } else {
         self.window.backgroundColor = [UIColor whiteColor];
     }
-    [self.window makeKeyWindow];
+    self.window.rootViewController = [[MyRootViewController alloc] init];
+    [self.window makeKeyAndVisible];
 
     RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-    [ReactNativeNavigation bootstrapWithBridge:bridge];
+    // [ReactNativeNavigation bootstrapWithBridge:bridge];
     [ReactNativeNavigation
         registerExternalComponent:@"RNNCustomComponent"
                          callback:^UIViewController *(NSDictionary *props, RCTBridge *bridge) {
@@ -45,6 +50,7 @@
 }
 
 - (NSArray<id<RCTBridgeModule>> *)extraModulesForBridge:(RCTBridge *)bridge {
+    [ReactNativeNavigation bootstrapWithBridge:bridge window:[ReactNativeNavigationWindow shared]];
     return [ReactNativeNavigation extraModulesForBridge:bridge];
 }
 
